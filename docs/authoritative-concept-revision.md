@@ -1,0 +1,1 @@
+Turn 2 replacement: the scenario control changes the proposed adoption rate, not the measured baseline. Update only copy and graphics that imply otherwise.

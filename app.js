@@ -1,0 +1,1 @@
+const supportedLanguages=['en','nl'];const supportedMarkets=["NL", "UK"];document.querySelector('#lang').addEventListener('change',function(){document.documentElement.lang=this.value;});
