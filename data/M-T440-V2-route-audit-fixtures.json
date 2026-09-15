@@ -1,0 +1,33 @@
+{
+  "fixture":"M-T440-V2 route audit source inventory",
+  "capturedAt":"2026-09-12T14:30:00Z",
+  "status":"input-only; observations need implementation and verification",
+  "supportedLanguages":["en","nl"],
+  "supportedMarkets":["NL","UK"],
+  "records":[
+    {"id":"R01","surface":"home","path":"/","language":"en","explicitMarket":"NL","action":"change language to nl","query":"market=NL","note":"default home entry"},
+    {"id":"R02","surface":"home","path":"/","language":"nl","explicitMarket":"NL","action":"change language to en","query":"market=NL","note":"return language toggle"},
+    {"id":"R03","surface":"home","path":"/","language":"en","explicitMarket":"UK","action":"change language to nl","query":"market=UK","note":"UK selector state"},
+    {"id":"R04","surface":"home","path":"/","language":"nl","explicitMarket":"UK","action":"change language to en","query":"market=UK","note":"UK selector state"},
+    {"id":"R05","surface":"explainer","path":"/explainer/","language":"en","explicitMarket":"NL","action":"change language to nl","query":"market=NL","note":"explainer home link present"},
+    {"id":"R06","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"NL","action":"change language to en","query":"market=NL","note":"explainer locale variant"},
+    {"id":"R07","surface":"explainer","path":"/explainer/","language":"en","explicitMarket":"UK","action":"change language to nl","query":"market=UK&ref=policy","note":"retain ref"},
+    {"id":"R08","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"UK","action":"change language to en","query":"market=UK&ref=policy","note":"retain ref"},
+    {"id":"R09","surface":"home","path":"/","language":"en","explicitMarket":"NL","action":"change market to UK","query":"market=NL","note":"market-only control"},
+    {"id":"R10","surface":"home","path":"/","language":"nl","explicitMarket":"NL","action":"change market to UK","query":"market=NL&utm_source=municipal","note":"retain campaign query"},
+    {"id":"R11","surface":"home","path":"/","language":"en","explicitMarket":"UK","action":"change market to NL","query":"market=UK","note":"market-only control"},
+    {"id":"R12","surface":"home","path":"/","language":"nl","explicitMarket":"UK","action":"change market to NL","query":"market=UK&mode=print","note":"print mode is not market inference"},
+    {"id":"R13","surface":"explainer","path":"/explainer/","language":"en","explicitMarket":"NL","action":"change market to UK","query":"market=NL","note":"explainer market-only control"},
+    {"id":"R14","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"NL","action":"change market to UK","query":"market=NL&mode=print","note":"print mode retained"},
+    {"id":"R15","surface":"explainer","path":"/explainer/","language":"en","explicitMarket":"UK","action":"change market to NL","query":"market=UK&ref=policy","note":"policy ref retained"},
+    {"id":"R16","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"UK","action":"change market to NL","query":"market=UK","note":"explainer market-only control"},
+    {"id":"R17","surface":"home","path":"/en/","language":"en","explicitMarket":"NL","action":"navigate to explainer","query":"market=NL","note":"language-prefixed legacy entry"},
+    {"id":"R18","surface":"home","path":"/nl/","language":"nl","explicitMarket":"UK","action":"navigate to explainer","query":"market=UK","note":"language-prefixed legacy entry"},
+    {"id":"R19","surface":"explainer","path":"/en/explainer/","language":"en","explicitMarket":"NL","action":"navigate home","query":"market=NL","note":"language-prefixed legacy entry"},
+    {"id":"R20","surface":"explainer","path":"/nl/explainer/","language":"nl","explicitMarket":"UK","action":"navigate home","query":"market=UK&ref=policy","note":"legacy deep link"},
+    {"id":"R21","surface":"home","path":"/","language":"en","explicitMarket":"gb","action":"change language to nl","query":"market=gb","note":"legacy UK alias; do not silently rewrite without decision"},
+    {"id":"R22","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"gb","action":"change language to en","query":"market=gb&ref=policy","note":"legacy UK alias plus ref"},
+    {"id":"R23","surface":"home","path":"/","language":"en","explicitMarket":"NL","action":"change language to nl","query":"market=NL&mode=print","note":"query retention exception"},
+    {"id":"R24","surface":"explainer","path":"/explainer/","language":"nl","explicitMarket":"UK","action":"change language to en","query":"market=UK&utm_source=municipal","note":"campaign query retention exception"}
+  ]
+}
