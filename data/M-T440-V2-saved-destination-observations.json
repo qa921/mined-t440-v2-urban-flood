@@ -1,0 +1,32 @@
+{
+  "fixture":"M-T440-V2 saved destination observations",
+  "capturedAt":"2026-09-08T09:10:00Z",
+  "reliability":"prior-state artifact; several rows are known stale or contradictory",
+  "observations":[
+    {"routeId":"R01","storedDestination":"/?lang=nl&market=NL","state":"plausible","comment":"no path change"},
+    {"routeId":"R02","storedDestination":"/?lang=en","state":"stale-missing-market","comment":"explicit NL removed"},
+    {"routeId":"R03","storedDestination":"/?lang=nl&market=NL","state":"wrong-market","comment":"explicit UK replaced by default NL"},
+    {"routeId":"R04","storedDestination":"/?lang=en&market=UK","state":"plausible","comment":"needs actual control check"},
+    {"routeId":"R05","storedDestination":"/explainer/?lang=nl","state":"stale-missing-market","comment":"explicit NL removed"},
+    {"routeId":"R06","storedDestination":"/explainer/?lang=en&market=UK","state":"wrong-market","comment":"NL replaced by UK"},
+    {"routeId":"R07","storedDestination":"/explainer/?lang=nl&market=NL","state":"wrong-market-and-missing-query","comment":"UK and ref lost"},
+    {"routeId":"R08","storedDestination":"/explainer/?lang=en&market=UK","state":"stale-missing-query","comment":"ref lost"},
+    {"routeId":"R09","storedDestination":"/?lang=nl&market=UK","state":"wrong-language","comment":"market action changed language"},
+    {"routeId":"R10","storedDestination":"/?lang=en&market=UK","state":"wrong-language-and-missing-query","comment":"NL language and campaign query lost"},
+    {"routeId":"R11","storedDestination":"/?lang=en&market=NL","state":"plausible","comment":"requires current verification"},
+    {"routeId":"R12","storedDestination":"/?lang=nl&market=NL","state":"stale-missing-query","comment":"mode=print lost"},
+    {"routeId":"R13","storedDestination":"/explainer/?lang=en&market=UK","state":"plausible","comment":"requires current verification"},
+    {"routeId":"R14","storedDestination":"/explainer/?lang=nl&market=UK","state":"stale-missing-query","comment":"mode=print lost"},
+    {"routeId":"R15","storedDestination":"/explainer/?lang=nl&market=NL","state":"wrong-language-and-missing-query","comment":"language switched and ref lost"},
+    {"routeId":"R16","storedDestination":"/explainer/?lang=nl&market=NL","state":"plausible","comment":"requires current verification"},
+    {"routeId":"R17","storedDestination":"/explainer/?lang=en","state":"stale-missing-market","comment":"legacy source lost explicit NL"},
+    {"routeId":"R18","storedDestination":"/explainer/?lang=nl&market=NL","state":"wrong-market","comment":"UK replaced by NL"},
+    {"routeId":"R19","storedDestination":"/?lang=en&market=NL","state":"plausible","comment":"legacy path collapse may be intended; verify navigation"},
+    {"routeId":"R20","storedDestination":"/?lang=nl&market=UK","state":"stale-missing-query","comment":"ref lost"},
+    {"routeId":"R21","storedDestination":"/?lang=nl&market=UK","state":"conflicting-legacy-rule","comment":"gb silently canonicalized to UK; no approved decision recorded"},
+    {"routeId":"R22","storedDestination":"/explainer/?lang=en&market=NL","state":"wrong-market-and-missing-query","comment":"gb converted to NL and ref lost"},
+    {"routeId":"R23","storedDestination":"/?lang=nl&market=NL","state":"stale-missing-query","comment":"mode=print lost"},
+    {"routeId":"R24","storedDestination":"/explainer/?lang=en&market=UK","state":"stale-missing-query","comment":"campaign query lost"}
+  ],
+  "openQuestions":["Which route format is canonical?","How should legacy market=gb be represented after an explicit language-only change?","Do existing home/explainer links retain unknown query values?"]
+}
