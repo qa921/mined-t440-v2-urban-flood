@@ -1,5 +1,10 @@
 {
   "title": "Urban flood resilience",
-  "intro": "Adjust the scenario to compare an indicative baseline and proposed pathway.",
-  "explainer": "Urban flood resilience: how to read the simulation"
+  "intro": "Compare the observed baseline with a proposed adoption scenario for this market.",
+  "visual.aria": "Diagram: the observed baseline is shown next to the user-controlled adoption scenario. The scenario control changes the proposed adoption rate, not the measured baseline.",
+  "visual.text": "Observed baseline ⇒ user-controlled adoption scenario",
+  "nav.explainer": "How to read the simulation",
+  "nav.home": "Back to the simulation",
+  "explainer": "Urban flood resilience: how to read the simulation",
+  "explainer.lead": "The diagram separates what was observed from the assumption you choose. It does not measure the proposed outcome."
 }
