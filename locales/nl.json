@@ -1,5 +1,10 @@
 {
   "title": "Stedelijke wateroverlast",
-  "intro": "Pas het scenario aan om een indicatieve basislijn met een voorgesteld pad te vergelijken.",
-  "explainer": "Stedelijke wateroverlast: uitleg van de simulatie"
+  "intro": "Vergelijk de gemeten uitgangssituatie met een voorgesteld adoptiescenario voor deze markt.",
+  "visual.aria": "Diagram: de gemeten uitgangssituatie staat naast het door gebruiker gekozen adoptiescenario. De scenarioregelaar verandert het voorgestelde adoptietempo, niet de gemeten uitgangssituatie.",
+  "visual.text": "Gemeten uitgangssituatie ⇒ door gebruiker gekozen adoptiescenario",
+  "nav.explainer": "Zo leest u de simulatie",
+  "nav.home": "Terug naar de simulatie",
+  "explainer": "Stedelijke wateroverlast: uitleg van de simulatie",
+  "explainer.lead": "Het diagram scheidt wat is gemeten van de aanname die je kiest. Het meet de voorgestelde uitkomst niet."
 }
